@@ -11,6 +11,14 @@ public class Player : MonoBehaviour
 
     private Rigidbody rb;
 
+    public float divider = 2f;
+
+    private Vector3 scaleMod;
+    private Vector3 currentScale;
+
+    public float forwardMod = 1.3f; // Максимальна довжина
+    public float sideMod = 0.8f; // Мінімальна ширина
+
     private void Start()
     {
         // Отримуємо посилання на компонент Rigidbody з об'єкту
@@ -63,18 +71,40 @@ public class Player : MonoBehaviour
             7,
             transform.position.z - 1);
     }
+    // Змінює ширину і довжину по кліку
     private void SlimeMoveAnim()
     {
-        transform.localScale = new Vector3(
+        float forwardScale = Mathf.Lerp(
+            transform.localScale.z,
+            1.3f,
+            Time.deltaTime / 0.5f);
+
+        float sideScale = Mathf.Lerp(
+            transform.localScale.x,
             0.8f,
-            transform.localScale.y,
-            1.3f);
+            Time.deltaTime / 0.5f);
+
+        transform.localScale = new Vector3(
+            sideScale, // Зміна ширини
+            transform.localScale.y, // Висота не змінюється
+            forwardScale); // Зміна довжини
     }
+    // Зупиняє виконання анімації
     private void SlimeStopAnim()
     {
-        transform.localScale = new Vector3(
+        float forwardScale = Mathf.Lerp(
+            transform.localScale.z,
             1f,
-            transform.localScale.y,
-            1f);
+            Time.deltaTime / 0.5f);
+
+        float sideScale = Mathf.Lerp(
+            transform.localScale.x,
+            1f,
+            Time.deltaTime / 0.5f);
+
+        transform.localScale = new Vector3(
+            sideScale, // Зміна ширини
+            transform.localScale.y, // Висота не змінюється
+            forwardScale); // Зміна довжини
     }
 }
