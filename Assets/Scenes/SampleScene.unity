@@ -123,6 +123,74 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &115474835
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.77407634
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04999787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.3562775
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409146879840345912, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_Name
+      value: Microorganism (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1fe468e5e16c3b4cad2de0351a35235, type: 3}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1498,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1fe468e5e16c3b4cad2de0351a35235, type: 3}
+--- !u!1001 &2087457363
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.8914292
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.049998824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.490355
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681675822723679265, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409146879840345912, guid: b1fe468e5e16c3b4cad2de0351a35235,
+        type: 3}
+      propertyPath: m_Name
+      value: Microorganism (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1fe468e5e16c3b4cad2de0351a35235, type: 3}
 --- !u!1 &2136502629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,3 +1756,5 @@ SceneRoots:
   - {fileID: 2062632808}
   - {fileID: 795542128}
   - {fileID: 2045292447}
+  - {fileID: 115474835}
+  - {fileID: 2087457363}
