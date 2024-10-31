@@ -6,6 +6,7 @@ public class Microorganism : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
+        Player.Instance.AddScale();
         Destroy(gameObject);
     }
 }

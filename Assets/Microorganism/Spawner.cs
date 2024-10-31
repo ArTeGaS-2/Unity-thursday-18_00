@@ -21,11 +21,11 @@ public class Spawner : MonoBehaviour
             i < spawnNumber; // Умова - поки "і" не дорівнює змінній "spawnNumber"
             i++) // Додає +1 до "i" після кожної ітерації(проходження по колу)
         {
-            x_Pos = Random.Range(0, radius);
-            z_Pos = Random.Range(0, radius);
+            x_Pos = Random.Range(-radius, radius);
+            z_Pos = Random.Range(-radius, radius);
 
             GameObject objectToSpawn = organisms[
-                Random.Range(0, organisms.Count - 1)];
+                Random.Range(0, organisms.Count)];
 
             Vector3 spawnPosition = new Vector3(
                 x_Pos,
