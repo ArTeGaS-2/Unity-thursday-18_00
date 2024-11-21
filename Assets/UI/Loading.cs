@@ -18,7 +18,10 @@ public class Loading : MonoBehaviour
     IEnumerator AnimateDots()
     // Метод для анімування
     {
-        while (true)
+        // Зупиняє час у грі
+        Time.timeScale = 0f; 
+
+        for(int i = 0; i < 3; i++)
         {
             // Збільшення крапки
             dot_1.transform.localScale =
@@ -40,6 +43,9 @@ public class Loading : MonoBehaviour
             yield return new WaitForSecondsRealtime(1f);
             dot_3.transform.localScale =
                 new Vector3(1f, 1f, 1f);
+
+            loadingScreen.SetActive(false);
+            Time.timeScale = 1f;
         }
     }
 }
