@@ -43,9 +43,8 @@ public class Loading : MonoBehaviour
             yield return new WaitForSecondsRealtime(1f);
             dot_3.transform.localScale =
                 new Vector3(1f, 1f, 1f);
-
-            loadingScreen.SetActive(false);
-            Time.timeScale = 1f;
         }
+        loadingScreen.SetActive(false);
+        Time.timeScale = 1f;
     }
 }

@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 413770835}
   - component: {fileID: 413770834}
   - component: {fileID: 413770838}
+  - component: {fileID: 413770839}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -623,7 +624,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413770833}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be7270b2e2ed094428d671bcff7e1f63, type: 3}
   m_Name: 
@@ -633,6 +634,22 @@ MonoBehaviour:
   - {fileID: 421135622265618914, guid: 5cf342a1db8e8f74aaddcb8f86ebebde, type: 3}
   spawnNumber: 100
   radius: 10
+--- !u!114 &413770839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413770833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bef104cdc4f1de498be1dc9f110e3cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  organisms: []
+  spawnNumber: 10
+  radius: 10
+  delay: 0.2
 --- !u!1 &579577750
 GameObject:
   m_ObjectHideFlags: 0
