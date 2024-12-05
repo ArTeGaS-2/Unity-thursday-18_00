@@ -646,7 +646,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bef104cdc4f1de498be1dc9f110e3cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  organisms: []
+  organisms:
+  - {fileID: 6409146879840345912, guid: b1fe468e5e16c3b4cad2de0351a35235, type: 3}
+  - {fileID: 421135622265618914, guid: 5cf342a1db8e8f74aaddcb8f86ebebde, type: 3}
   spawnNumber: 10
   radius: 10
   delay: 0.2

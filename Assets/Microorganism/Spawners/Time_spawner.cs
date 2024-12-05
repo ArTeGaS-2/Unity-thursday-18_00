@@ -19,6 +19,7 @@ public class Time_spawner : MonoBehaviour
     public float delay = 0.2f;
     private void Start()
     {
+
         StartCoroutine(SpawnObjects());
     }
     IEnumerator SpawnObjects()
