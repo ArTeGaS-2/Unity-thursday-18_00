@@ -6,7 +6,10 @@ public class Microorganism : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Player.Instance.AddScale();
-        Destroy(gameObject);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Player.Instance.AddScale();
+            Destroy(gameObject);
+        }
     }
 }

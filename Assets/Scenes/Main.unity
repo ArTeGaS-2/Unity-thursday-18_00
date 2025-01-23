@@ -233,7 +233,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51019467}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b71c528d54979594085d7cf3aaf1f470, type: 3}
   m_Name: 
@@ -1517,6 +1517,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: DD_Container
       objectReference: {fileID: 0}
+    - target: {fileID: 4231430397727812768, guid: 8ca0b83f58597334cb5028f3069fded5,
+        type: 3}
+      propertyPath: needToGo
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4231430397727812768, guid: 8ca0b83f58597334cb5028f3069fded5,
+        type: 3}
+      propertyPath: objectSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4231430397727812768, guid: 8ca0b83f58597334cb5028f3069fded5,
+        type: 3}
+      propertyPath: anglePerIteration
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4880463292256912669, guid: 8ca0b83f58597334cb5028f3069fded5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1720,6 +1735,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoadingScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475504321674562255, guid: 7bf80d095e3975049a0f36690f21c408,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4555372167775942648, guid: 7bf80d095e3975049a0f36690f21c408,
         type: 3}

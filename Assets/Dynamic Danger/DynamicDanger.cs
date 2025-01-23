@@ -9,11 +9,13 @@ public class DynamicDanger : MonoBehaviour
 
     private Rigidbody rb;
 
-    private float currentAngleMod = 0f; // Поточний модифікатор напрямку
     public float anglePerIteration = 90f; // Зміна кута за ітерацію
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Destroy(other.gameObject);
+        }
     }
     private void Start()
     {
@@ -22,10 +24,10 @@ public class DynamicDanger : MonoBehaviour
     }
     private void Update()
     {
-        rb.velocity = Vector3.left *
+        Vector3 forward = transform.up;
+        rb.velocity = forward *
                       objectSpeed *
                       Time.deltaTime;
-
     }
     private IEnumerator RotateDynamicDanger()
     {
@@ -34,13 +36,13 @@ public class DynamicDanger : MonoBehaviour
             yield return new WaitForSeconds(needToGo); // затримка у секундах
                                                        // Зміна поточного кута
 
-            Vector3 currenEulerAngles = transform.rotation.eulerAngles;
-
-            currenEulerAngles.z += currentAngleMod;
-
+            // Змінна поточного кута 
+            Vector3 currenEulerAngles =
+                transform.rotation.eulerAngles;
+            // Додавання змін до координати y
+            currenEulerAngles.y += anglePerIteration;
+            // Встановлення нових координат обертання
             transform.rotation = Quaternion.Euler(currenEulerAngles);
-
-            currentAngleMod += anglePerIteration; // Зміна значення модифікатора
         }
     }
 }
