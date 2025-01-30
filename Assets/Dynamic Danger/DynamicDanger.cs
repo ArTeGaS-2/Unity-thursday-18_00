@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DynamicDanger : MonoBehaviour
 {
-    public float needToGo = 3f; // Час/затримка до події
+    public float needToGo = 3.1f; // Час/затримка до події
     public float objectSpeed = 5f; // Швидкість ворога/об'єкта
 
     private Rigidbody rb;
@@ -35,7 +35,6 @@ public class DynamicDanger : MonoBehaviour
         {
             yield return new WaitForSeconds(needToGo); // затримка у секундах
                                                        // Зміна поточного кута
-
             // Змінна поточного кута 
             Vector3 currenEulerAngles =
                 transform.rotation.eulerAngles;
