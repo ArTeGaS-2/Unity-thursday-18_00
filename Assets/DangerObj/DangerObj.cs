@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DangerObj : MonoBehaviour
 {
@@ -10,8 +11,7 @@ public class DangerObj : MonoBehaviour
         // Перевіряє, щоб у об'єкта був тег "Player"
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Знищує об'єкт, який зіткнувся з небезпекою (гравця)
-            Destroy(collision.gameObject);
+            SceneManager.LoadScene(1);
         }
     }
 }

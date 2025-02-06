@@ -8,6 +8,7 @@ public class Microorganism : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            Score.Instance.AddScore();
             Player.Instance.AddScale();
             Destroy(gameObject);
         }
