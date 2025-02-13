@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // Перевіряє чи миша над NPC
+    private void OnMouseOver()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Перевіряє, чи натиснута права кнопка миші
+        if (Input.GetMouseButtonDown(1))
+        {
+            // Звітує в консоль, що кнопка натиснута
+            Debug.Log("Інтеракція є");
+        }
     }
 }
