@@ -24,9 +24,13 @@ public class Player : MonoBehaviour
     public float forwardMod = 1.3f; // Максимальна довжина
     public float sideMod = 0.8f; // Мінімальна ширина
 
-    private void Start()
+    private void Awake()
     {
         Instance = this;
+    }
+    private void Start()
+    {
+        
         // Отримуємо посилання на компонент Rigidbody з об'єкту
         rb = GetComponent<Rigidbody>();
         
