@@ -6,11 +6,7 @@ public class NPC : MonoBehaviour
 {
     public GameObject gameShop;
 
-    private void Start()
-    {
-        gameShop = GetComponent<GameObject>();
-        gameShop.SetActive(false);
-    }
+    public Texture2D customCursor;
     // Перевіряє чи миша над NPC
     private void OnMouseOver()
     {
@@ -18,6 +14,7 @@ public class NPC : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             gameShop.SetActive(true);
+            Cursor.SetCursor(customCursor, Vector2.zero, CursorMode.Auto);
         }
     }
 }

@@ -5,9 +5,12 @@ using UnityEngine;
 public class Game_Shop : MonoBehaviour
 {
     Renderer slimeRenderer;
+
+    public GameObject gameShop; // Посилання на об'єкт магазину
     private void Start()
     {
         slimeRenderer = Player.Instance.gameObject.GetComponent<Renderer>();
+        gameShop.SetActive(false); // Вимикаємо рамку магазину
     }
     public void SetColorRed()
     {
@@ -23,6 +26,6 @@ public class Game_Shop : MonoBehaviour
     }
     public void CloseShop()
     {
-        gameObject.SetActive(false);
+        gameShop.SetActive(false);
     }
 }
