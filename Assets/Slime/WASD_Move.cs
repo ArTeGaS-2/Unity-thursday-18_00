@@ -14,10 +14,13 @@ public class WASD_Move : MonoBehaviour
 
     private Rigidbody rb; // Фізичний компонент
     public Animator animator; // Посилання на аніматор
+
+    private Projectile projectileObj;
     private void Start()
     {
         Instance = this;
         rb = GetComponent<Rigidbody>();
+        projectileObj = GetComponent<Projectile>();
     }
     private void Update()
     {
@@ -60,6 +63,10 @@ public class WASD_Move : MonoBehaviour
                     directionToMouse);
                 transform.rotation = Quaternion.Lerp(transform.rotation,
                     targetRotation, Time.deltaTime * rotationSpeed);
+            }
+            if (Input.GetMouseButtonDown(0)) // Перевірка натиску ЛКМ
+            {
+                projectileObj.ShootProjectileForward(); // Виклик методу зі скрипта
             }
         }
         // Оновлення позиції камери
