@@ -10,8 +10,16 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent agent; //  омпонент агента AI Navigation
     private void Start()
     {
-        // «находимо персонажа гравц€ по назв≥ ≥ отримуЇмо позиц≥ю
-        target = GameObject.Find("Player").GetComponent<Transform>();
+        if (GameObject.Find("Player"))
+        {
+            // «находимо персонажа гравц€ по назв≥ ≥ отримуЇмо позиц≥ю
+            target = GameObject.Find("Player").GetComponent<Transform>();
+        }
+        else if (GameObject.Find("Slime"))
+        {
+            // «находимо персонажа гравц€ по назв≥ ≥ отримуЇмо позиц≥ю
+            target = GameObject.Find("Slime").GetComponent<Transform>();
+        }
         // ќтримуЇмо компонент NavMeshAgent з об'Їкту ворога
         agent = GetComponent<NavMeshAgent>();
     }

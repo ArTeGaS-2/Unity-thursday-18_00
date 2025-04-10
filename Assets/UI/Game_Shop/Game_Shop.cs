@@ -9,7 +9,10 @@ public class Game_Shop : MonoBehaviour
     public GameObject gameShop; // Посилання на об'єкт магазину
     private void Start()
     {
-        slimeRenderer = Player.Instance.gameObject.GetComponent<Renderer>();
+        if (slimeRenderer != null)
+        {
+            slimeRenderer = Player.Instance.gameObject.GetComponent<Renderer>();
+        }
         gameShop.SetActive(false); // Вимикаємо рамку магазину
     }
     public void SetColorRed()
