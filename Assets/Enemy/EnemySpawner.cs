@@ -19,7 +19,9 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        
+        playerTransform = GameObject.Find("Slime").
+            GetComponent<Transform>();
+        InvokeRepeating("SpawnEnemy", 2, spawnInterval);
     }
     private void SpawnEnemy()
     {
@@ -54,5 +56,4 @@ public class EnemySpawner : MonoBehaviour
         }
         Instantiate(enemyPrefab, spawnPoint, Quaternion.identity);
     }
-
 }

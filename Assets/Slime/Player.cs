@@ -24,13 +24,15 @@ public class Player : MonoBehaviour
     public float forwardMod = 1.3f; // Максимальна довжина
     public float sideMod = 0.8f; // Мінімальна ширина
 
+    private Projectile projectile_script; // скрипт проджектайла
+
     private void Awake()
     {
         Instance = this;
     }
     private void Start()
     {
-        
+        projectile_script = GetComponent<Projectile>();
         // Отримуємо посилання на компонент Rigidbody з об'єкту
         rb = GetComponent<Rigidbody>();
         
@@ -90,6 +92,10 @@ public class Player : MonoBehaviour
             {
                 SlimeStopAnim();
             }
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            projectile_script.ShootProjectileForward();
         }
         mainCamera.transform.position = new Vector3(
             transform.position.x,
