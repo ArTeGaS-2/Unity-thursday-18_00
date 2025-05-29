@@ -53,6 +53,5 @@ public class Enemy : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
-        
     }
 }
